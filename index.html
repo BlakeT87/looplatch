@@ -1,47 +1,32 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>LoopLatch</title>
+        <title>Loop Latch</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-       
-       <!--navigation bar will be sticky at top-->
         <div id="navigation">
-            <header id="title">LoopLatch</header>
-            <ul id="navlist">
-                <li id="sign-up">Sign-Up / Login</li>
-                <li id="about-us">About Us</li>
-                <li id="features">Features</li>
-                <li id="pricing">Pricing</li>
-                <li id="reviews">Reviews</li>
-            </ul>
+            <header>Loop Latch</header>
+            <ul id="nav-list">
+               <li class="nav-btn">Sign Up</li>
+               <li class="nav-btn">About Us</li>
+               <li class="nav-btn">Pricing</li>
+               <li class="nav-btn">Reviews</li>
+            </ul>            
         </div>
-        <!-- task input, will generate list items -->
-        <div id="task-input">
-            <input type="text">
-            <button id="newTaskBtn" class="btn new">New Task</button>
-            <button id="assignTaskBtn" class="btn assign">Assign Task</button>
-        </div>
-        <!-- task list, will need header for 5W1H -->
-        <div id="taskContainer">
-            <header class="taskHeader">Tasks</header>
-            <ul id="taskList">
-            </ul>
-        </div>
-        
-        
-        <script src="script.js" async defer></script>
+        <input type="text" id="taskInput" placeholder="Enter a new task">
+        <button class="btn" id="addTaskButton">Add Task</button>
+        <ul id="taskList"></ul>
+    
+        <script src="script.js"></script>
     </body>
 </html>
+

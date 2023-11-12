@@ -1,3 +1,7 @@
+*{
+    border: 1px solid red;
+}
+
 body{
     background-color: grey;
 }
@@ -7,4 +11,23 @@ body{
     color: black;
     border-radius: 6px;
     box-shadow: none;
+}
+.nav-btn{
+    background-color: grey;
+    padding: 10px;
+}
+
+#nav-list{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+.navigation{
+    display: block;
+}
+
+li{
+    background-color: white;
+    color: black;
+    list-style: none;
 }
